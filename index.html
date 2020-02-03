@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+    <title>My MovieList</title>
+</head>
+
+<body>
+  
+    <div class="container mt-4 bg-secondary">
+       
+        <h1 class="col-11 bg-warning display-4 text-center ml-3"></i>MOVIEdb</h1>
+        <!-- here goes the alert div /   -->
+        <form id="movie-form">
+            <div class="form-group text-warning col-8">
+                <label for="title">Title</label>
+                <input type="text" id="title" class="form-control">
+            </div>
+            <div class="form-group text-warning col-8">
+                <label for="director">Director</label>
+                <input type="text" id="director" class="form-control">
+            </div>
+            <div class="form-group text-warning col-8">
+                <label for="genre">Genre</label>
+                <input type="text" id="genre" class="form-control">
+            </div>
+            <input type="submit" value="Add Movie" class="btn btn-success ml-3">
+        </form>
+        <table class="table table-striped table-bordered mt-5">
+            <thead class="text-center">
+                <tr class="text-white">
+                    <th>Title</th>
+                    <th>Director</th>
+                    <th>Genre</th>
+                    <th>Actions</th>
+                </tr>
+            </thead>
+            <tbody class="text-white text-center" id="movie-list"></tbody>
+        </table>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+
+</html>
